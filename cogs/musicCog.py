@@ -67,7 +67,7 @@ class musicCog(commands.Cog):
             return
         with yt_dlp.YoutubeDL(opts) as ytdl:
             songRaw=ytdl.extract_info(link,download=False)
-            songUrl=songRaw['formats'][6]['url']
+            songUrl=songRaw['formats'][5]['url']
             songTitle=songRaw['title']
             songTbnail=songRaw['thumbnail']
             songDur=songRaw['duration_string']
